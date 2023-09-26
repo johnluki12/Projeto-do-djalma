@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Editar";
+}
+
+<div class="text-center">
+
+    <h1 class="display 4">Editar Produtos</h1>
+
+</div>
+
+<form>
+    <div class="mb-3">
+        <label for="nome">Descrição</label>
+        <input type="text" class="form-control" placeholder="Digite a descrição">
+    </div>
+    <div class="mb-3">
+        <label for="nome">Fabricante</label>
+        <input type="text" class="form-control" placeholder="Digite a fabricante">
+    </div>
+    <div class="mb-3">
+        <label for="precovenda">Preço da venda</label>
+        <input type="number" class="form-control" placeholder="Digite o valor da venda">
+    </div>
+    <div class="mb-3">
+        <label for="estoque">Estoque atual</label>
+        <input type="number" class="form-control" placeholder="Digite o estoque atual">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Alterar</button>
+    <a class="btn btn-success" asp-controller="Produto" asp-action="Index" role="button">Voltar</a>
+</form>
